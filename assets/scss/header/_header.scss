@@ -1,0 +1,65 @@
+
+.header {
+	width: 100%;
+	color: rgb(107, 107, 107);
+	background-color: $white;
+	font-family: sans-serif;
+	font-size: 14px; 
+	font-weight: bold;
+
+	.container {
+	 	width: 100%; 		
+	 	/*//background color with global variable*/
+ 		background-color: $white;
+	 	display: flex;
+	 	/*horizontal*/
+		justify-content: space-between; 
+		/*//align center content vertical*/
+		align-items: center;
+		padding: 20px 0px;
+		/*flex-direction: column;*/
+	}
+
+	.__logo {
+		display: flex;
+    	align-items: center;
+	}
+
+	.__nav_bar {
+	}
+	
+	ul {
+		display: flex;
+		list-style-type: none;
+
+		li {
+			padding: 10px;
+		}
+	}
+}
+
+
+.__bottom_header {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	color: $white;
+	font-size: 15px; 
+
+	>div {
+	  	padding: 10px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.__adobo_patoshet_text_2 {
+		font-size: 12px;
+	}
+
+	img {
+		align-self: center;
+		padding: 10px;
+	}
+
+}

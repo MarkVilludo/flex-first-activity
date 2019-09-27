@@ -1,0 +1,164 @@
+
+.__wallpaper {
+	height: 500px;
+    width: 100%;
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    align-items: center;
+
+
+    h1 {
+    	font-size: 30px;
+    	font-family: sans-serif;
+    	text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		font-weight: 100;
+    }
+
+    .container {
+    	margin-top: 100px;
+    }
+
+    button {
+    	height: 37px;
+	    padding: 10px 30px;
+	    margin-top: 20px;
+	    /*background: #1473e6;*/
+	    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+		background-color: #1473e6;
+	    color: white;
+	    font-weight: bold;
+	    border: 0;
+	    border-radius: 21px;
+	    font-size: 14px;
+	    transition: all 0.4s ;
+
+	    &:hover {
+	    	background:red;
+	    }
+
+    }
+}
+
+.__div_box_assets {
+	display: flex;
+
+	.container {
+		display: flex;
+		width: 100%;
+		padding: 3rem 0;
+		flex-wrap: wrap;
+		/*background: red;*/
+		justify-content: center;
+
+		.items_holder {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			/*background:red;*/
+			padding-left: 6%;
+
+			> div {
+
+			width: 26%;
+		    border-radius: 5px;
+		    border: 1px solid #ccc;
+		    margin: 10px;
+		    padding: 1rem;
+		    text-align: center;
+		    margin-bottom: 3rem;
+		    min-height: 12rem;
+		    padding-top: 51px;
+		    position: relative;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+
+	    	h1 {
+	    		font-size: 29px;
+	    		font-family: sans-serif;
+	    		font-weight: 100;
+	    	}
+
+		    p {
+		    	font-size: 14px;
+		    	display: block;
+			    margin-block-start: 1em;
+			    margin-block-end: 1em;
+			    margin-inline-start: 0px;
+			    margin-inline-end: 0px;
+		    }
+
+		    img {
+			    position: absolute;
+			    top: -15px;
+			    justify-self: center;
+		    }
+
+		    a {
+		    	color: rgb(43, 154, 243);
+	    	 	font-family: Helvetica,Arial,sans-serif;
+	    	 	text-decoration: none;
+		    	font-size: 16px;
+		    }
+
+	     	button {
+	     		background: #1473e6;
+		    	height: 37px;
+			    padding: 10px 30px;
+			    margin-top: 20px;
+			    color: white;
+			    font-weight: bold;
+			    border: 0;
+			    border-radius: 21px;
+			    position: absolute;
+			    bottom: -16px;
+			    font-family: Helvetica,Arial,sans-serif;
+    			font-size: 1rem;
+		    }
+		}
+		}
+
+		
+	}
+}
+
+/*max-width - end below/
+/*min-width - start top*/
+@media(max-width: 960px) {
+	.__div_box_assets  {
+
+		.container {
+			.items_holder {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				padding-left: 3%;
+				> div {
+					width: 42%;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.__div_box_assets  {
+		.container {
+			.items_holder {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				padding-left: 12%;
+				> div {
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+
